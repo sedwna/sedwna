@@ -280,13 +280,13 @@ function renderMonthlyActivity(theme) {
 
   <path d="${snakePath}" stroke="#B98735" stroke-opacity=".16" stroke-width="2" stroke-dasharray="3 7"/>
   <g filter="url(#softGlow)">
-    <circle r="4" fill="#9B6A2F" opacity=".34">
+    <circle cx="${snakePoints[0].x}" cy="${snakePoints[0].y}" r="4" fill="#9B6A2F" opacity=".34">
       <animateMotion path="${snakePath}" dur="${cycleSeconds}s" keyPoints="0;1;1" keyTimes="0;.82;1" calcMode="linear" repeatCount="indefinite"/>
     </circle>
-    <circle r="7" fill="#C18F3E" opacity=".62">
+    <circle cx="${snakePoints[0].x}" cy="${snakePoints[0].y}" r="7" fill="#C18F3E" opacity=".62">
       <animateMotion path="${snakePath}" dur="${cycleSeconds}s" begin=".08s" keyPoints="0;1;1" keyTimes="0;.82;1" calcMode="linear" repeatCount="indefinite"/>
     </circle>
-    <circle r="10" fill="url(#snake)" stroke="#FFF0C7" stroke-opacity=".82">
+    <circle cx="${snakePoints[0].x}" cy="${snakePoints[0].y}" r="10" fill="url(#snake)" stroke="#FFF0C7" stroke-opacity=".82">
       <animateMotion path="${snakePath}" dur="${cycleSeconds}s" begin=".16s" keyPoints="0;1;1" keyTimes="0;.82;1" calcMode="linear" repeatCount="indefinite"/>
     </circle>
   </g>
@@ -315,7 +315,7 @@ function renderMonthlyActivity(theme) {
     </rect>
     ${progressTicks}
   </g>
-  <circle cy="261" r="5" fill="#D1FAE5" filter="url(#softGlow)">
+  <circle cx="385" cy="261" r="5" fill="#D1FAE5" filter="url(#softGlow)">
     <animate attributeName="cx" values="385;845;845;385" keyTimes="0;.82;.95;1" dur="${cycleSeconds}s" repeatCount="indefinite"/>
   </circle>
 
