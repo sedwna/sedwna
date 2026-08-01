@@ -56,7 +56,7 @@ In 2025, I completed Diginext Academy's intensive 8-week, in-person **Product Ma
   <a href="https://github.com/sedwna/BAXI"><img width="48%" src="./assets/projects/baxi.svg" alt="BAXI" /></a>
   <br />
   <a href="https://github.com/sedwna/ChatterAI"><img width="48%" src="./assets/projects/chatterai.svg" alt="ChatterAI" /></a>
-  <a href="https://github.com/sedwna/Image2Text-Translate"><img width="48%" src="./assets/projects/image2text.svg" alt="Image2Text Translate" /></a>
+  <a href="https://github.com/sedwna/Ticket-reservation"><img width="48%" src="./assets/projects/ticket-reservation.svg" alt="Ticket Reservation" /></a>
 </p>
 
 ## Product toolkit

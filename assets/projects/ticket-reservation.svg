@@ -1,0 +1,26 @@
+<svg width="430" height="180" viewBox="0 0 430 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ticket Reservation</title>
+  <desc id="desc">A full-stack amphitheater seat reservation system with an interactive seat map.</desc>
+  <defs>
+    <linearGradient id="bg" x1="12" y1="8" x2="418" y2="172" gradientUnits="userSpaceOnUse"><stop stop-color="#F5E6C3"/><stop offset="1" stop-color="#E0C68E"/></linearGradient>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" stroke="#0D2B45" stroke-opacity=".045"/></pattern>
+  </defs>
+  <style>.kicker{font:650 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1.5px}.name{font:750 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.copy{font:500 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.pill{font:650 8px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.6px}.cta{font:700 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.8px}</style>
+  <rect x=".5" y=".5" width="429" height="179" rx="17" fill="url(#bg)" stroke="#9B6A2F" stroke-opacity=".68"/>
+  <rect x="1" y="1" width="428" height="178" rx="16" fill="url(#grid)"/>
+  <path d="M18 1H282" stroke="#9B6A2F" stroke-width="3" stroke-linecap="round"/>
+  <text x="22" y="27" class="kicker" fill="#9B6A2F">BOOKING EXPERIENCE &#183; 04</text>
+  <text x="22" y="57" class="name" fill="#0D2B45">TICKET RESERVATION</text>
+  <text x="22" y="80" class="copy" fill="#3E5F69">A full-stack amphitheater booking system</text>
+  <text x="22" y="96" class="copy" fill="#3E5F69">with an interactive visual seat map.</text>
+  <g transform="translate(341 21)">
+    <circle cx="31" cy="31" r="30" fill="#B98735" fill-opacity=".12" stroke="#9B6A2F" stroke-opacity=".52"/>
+    <path d="M15 19a4 4 0 0 0 4-4h24a4 4 0 0 0 4 4v6a4 4 0 0 0 0 8v6a4 4 0 0 0-4 4H19a4 4 0 0 0-4-4v-6a4 4 0 0 0 0-8v-6Z" stroke="#704716" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M31 17v24" stroke="#704716" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4"/>
+    <path d="M21 24h5M21 30h5M36 24h5M36 30h5" stroke="#3D7C73" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(22 116)"><rect width="52" height="22" rx="11" fill="#0D2B45" fill-opacity=".08" stroke="#0D2B45" stroke-opacity=".18"/><text x="12" y="14" class="pill" fill="#0D2B45">REACT</text></g>
+  <g transform="translate(81 116)"><rect width="38" height="22" rx="11" fill="#B98735" fill-opacity=".11" stroke="#9B6A2F" stroke-opacity=".28"/><text x="12" y="14" class="pill" fill="#704716">GO</text></g>
+  <g transform="translate(126 116)"><rect width="78" height="22" rx="11" fill="#3D7C73" fill-opacity=".11" stroke="#3D7C73" stroke-opacity=".28"/><text x="12" y="14" class="pill" fill="#285F59">POSTGRESQL</text></g>
+  <text x="22" y="162" class="cta" fill="#9B6A2F">VIEW PROJECT &#8599;</text>
+</svg>
