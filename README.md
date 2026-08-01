@@ -79,12 +79,12 @@ In 2025, I completed Diginext Academy's intensive 8-week, in-person **Product Ma
 ## Building in public & private
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sedwna/sedwna/output/monthly-activity-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sedwna/sedwna/output/monthly-activity-snake.svg" />
-  <img alt="Sajjad's real monthly GitHub activity animation" src="https://raw.githubusercontent.com/sedwna/sedwna/output/monthly-activity-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sedwna/sedwna/output/github-activity-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sedwna/sedwna/output/github-activity-snake.svg" />
+  <img alt="A snake eating Sajjad's real daily GitHub activity" src="https://raw.githubusercontent.com/sedwna/sedwna/output/github-activity-snake.svg" />
 </picture>
 
-<div align="center"><sub>Public work and anonymized private contribution counts are included; private repository details stay private.</sub></div>
+<div align="center"><sub>Each square is a real day of GitHub activity. Public work and anonymized private contribution counts are included; repository details stay private.</sub></div>
 
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=sedwna&show_icons=true&hide_border=true&bg_color=00000000&title_color=B98735&icon_color=3D7C73&text_color=718096&rank_icon=github" alt="Sajjad's GitHub stats" />
