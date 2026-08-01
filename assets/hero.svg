@@ -68,21 +68,21 @@
       <text x="82" y="137" class="name" fill="#F8FAFC">SAJJAD DEHGHAN</text>
       <text x="84" y="174" class="role" fill="#CBD5E1">Product Specialist · AI-assisted Product Builder</text>
       <text x="84" y="202" class="role" fill="#94A3B8">Turning ambiguity into measurable product momentum.</text>
-      <path class="rule" d="M84 229H416" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
+      <path class="rule" d="M84 229H430" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
       <g transform="translate(84 251)">
-        <rect width="80" height="26" rx="13" fill="#00E5C4" fill-opacity=".1" stroke="#00E5C4" stroke-opacity=".35"/>
+        <rect width="94" height="26" rx="13" fill="#00E5C4" fill-opacity=".1" stroke="#00E5C4" stroke-opacity=".35"/>
         <circle cx="15" cy="13" r="3" fill="#00E5C4" class="spark"/>
         <text x="26" y="17" class="small" fill="#A7F3D0">DISCOVER</text>
       </g>
-      <g transform="translate(174 251)">
+      <g transform="translate(188 251)">
         <rect width="70" height="26" rx="13" fill="#7C3AED" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".35"/>
         <text x="14" y="17" class="small" fill="#DDD6FE">DESIGN</text>
       </g>
-      <g transform="translate(254 251)">
+      <g transform="translate(268 251)">
         <rect width="62" height="26" rx="13" fill="#22D3EE" fill-opacity=".1" stroke="#22D3EE" stroke-opacity=".35"/>
         <text x="15" y="17" class="small" fill="#A5F3FC">SHIP</text>
       </g>
-      <g transform="translate(326 251)">
+      <g transform="translate(340 251)">
         <rect width="90" height="26" rx="13" fill="#F59E0B" fill-opacity=".1" stroke="#F59E0B" stroke-opacity=".35"/>
         <text x="14" y="17" class="small" fill="#FDE68A">MEASURE</text>
       </g>
