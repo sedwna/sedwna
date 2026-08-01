@@ -51,12 +51,13 @@ In 2025, I completed Diginext Academy's intensive 8-week, in-person **Product Ma
 
 ## Selected work
 
-| Project | What it demonstrates | Built with |
-| :--- | :--- | :--- |
-| [**Open Product Operations OS**](https://github.com/sedwna/open-product-operations-os) | A vendor-neutral operating system for evidence-driven idea-to-release work, including agents, workbooks, QA, and independent controls. | JavaScript · Product Ops · AI agents |
-| [**BAXI**](https://github.com/sedwna/BAXI) | A transportation marketplace connecting drivers and customers across multiple service types. | Python · Marketplace UX |
-| [**ChatterAI**](https://github.com/sedwna/ChatterAI) | An intent-aware chatbot using Bag of Words and weighted-embedding LSTM techniques. | Python · NLP · Machine Learning |
-| [**Image2Text Translate**](https://github.com/sedwna/Image2Text-Translate) | A practical OCR workflow that extracts text from images and translates it into Persian. | Python · OCR · Translation |
+<p align="center">
+  <a href="https://github.com/sedwna/open-product-operations-os"><img width="48%" src="./assets/projects/open-product-ops.svg" alt="Open Product Operations OS" /></a>
+  <a href="https://github.com/sedwna/BAXI"><img width="48%" src="./assets/projects/baxi.svg" alt="BAXI" /></a>
+  <br />
+  <a href="https://github.com/sedwna/ChatterAI"><img width="48%" src="./assets/projects/chatterai.svg" alt="ChatterAI" /></a>
+  <a href="https://github.com/sedwna/Image2Text-Translate"><img width="48%" src="./assets/projects/image2text.svg" alt="Image2Text Translate" /></a>
+</p>
 
 ## Product toolkit
 
