@@ -77,11 +77,19 @@ function monthLabels(now = new Date()) {
     const month = date.getUTCMonth();
     if (column === 0 || month !== previousMonth) {
       const name = new Intl.DateTimeFormat("en-US", { month: "short", timeZone: "UTC" }).format(date);
-      labels.push(`<text x="${2 + column * 16}" y="-14" class="month">${name}</text>`);
+      labels.push({ column, name });
     }
     previousMonth = month;
   }
-  return labels.join("");
+  const spaced = [];
+  for (const label of labels) {
+    const previous = spaced.at(-1);
+    if (previous && label.column - previous.column < 3) spaced[spaced.length - 1] = label;
+    else spaced.push(label);
+  }
+  return spaced
+    .map(({ column, name }) => `<text x="${2 + column * 16}" y="-14" class="month">${name}</text>`)
+    .join("");
 }
 
 function weightedProgressKeyframes(svg) {
@@ -127,12 +135,16 @@ function enhance(svg, theme, contributionTotal) {
 
   svg = svg
     .replace(/<svg viewBox="[^"]+" width="[^"]+" height="[^"]+"/, '<svg viewBox="-76 -70 1000 270" width="1000" height="270"')
-    .replace(/\.u\.u0\{fill:[^;]+;/, ".u.u0{fill:url(#progressGradient);");
+    .replace(/\.u\.u0\{fill:[^;]+;/, ".u.u0{fill:url(#progressGradient);")
+    .replace(/<rect class="u u([1-9]\d*)"[^>]*\/>/g, "");
 
   const defs = `<defs>
     <linearGradient id="progressGradient" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="${theme.progressStart}"/><stop offset="1" stop-color="${theme.progressEnd}"/>
     </linearGradient>
+    <clipPath id="progressClip">
+      <rect x="2" y="152" width="844.6" height="16" rx="8"/>
+    </clipPath>
   </defs>`;
   svg = svg.replace(/(<desc>[\s\S]*?<\/desc>)/, `$1${defs}`);
 
@@ -143,6 +155,7 @@ function enhance(svg, theme, contributionTotal) {
     .month{font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:${theme.text}}
     .axis{font:600 10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:${theme.muted}}
     .percent{font:600 8px ui-monospace,SFMono-Regular,Menlo,monospace;fill:${theme.muted}}
+    .u.u0{transform-box:fill-box;transform-origin:left center}
   `;
   svg = svg.replace("</style>", `${extraCss}</style>`);
 
@@ -174,15 +187,16 @@ function enhance(svg, theme, contributionTotal) {
     <g>
       <text x="0" y="132" class="meta">WEIGHTED EATING PROGRESS &#183; LIGHT 1&#215; &#8594; DARK 4&#215;</text>
       <text x="0" y="145" class="percent">0%</text>
-      <text x="206" y="145" class="percent">25%</text>
-      <text x="418" y="145" class="percent">50%</text>
-      <text x="630" y="145" class="percent">75%</text>
-      <text x="830" y="145" class="percent">100%</text>
-      <rect x="0" y="150" width="848.6" height="20" rx="10" fill="${theme.track}" stroke="${theme.trackBorder}" stroke-width="2"/>
+      <text x="212.15" y="145" text-anchor="middle" class="percent">25%</text>
+      <text x="424.3" y="145" text-anchor="middle" class="percent">50%</text>
+      <text x="636.45" y="145" text-anchor="middle" class="percent">75%</text>
+      <text x="848.6" y="145" text-anchor="end" class="percent">100%</text>
+      <rect x="0" y="150" width="848.6" height="20" rx="10" fill="${theme.track}"/>
+      <rect class="u u0" height="14" width="844.6" x="2" y="153" rx="7" ry="7" clip-path="url(#progressClip)"/>
       <line x1="212.15" y1="151" x2="212.15" y2="169" stroke="${theme.trackBorder}" stroke-opacity=".75"/>
       <line x1="424.3" y1="151" x2="424.3" y2="169" stroke="${theme.trackBorder}" stroke-opacity=".75"/>
       <line x1="636.45" y1="151" x2="636.45" y2="169" stroke="${theme.trackBorder}" stroke-opacity=".75"/>
-      <rect class="u u0" height="14" width="848.6" x="0" y="153" rx="7" ry="7"/>
+      <rect x="0" y="150" width="848.6" height="20" rx="10" fill="none" stroke="${theme.trackBorder}" stroke-width="2"/>
     </g>`;
   svg = svg.replace(/<rect class="u u0"[^>]*\/>/, progress);
   return svg;
