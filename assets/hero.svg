@@ -4,19 +4,19 @@
 
   <defs>
     <linearGradient id="bg" x1="30" y1="10" x2="870" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#090D1A"/>
-      <stop offset="0.52" stop-color="#11152A"/>
-      <stop offset="1" stop-color="#0A1020"/>
+      <stop stop-color="#E1BE7E"/>
+      <stop offset="0.52" stop-color="#F2DDAE"/>
+      <stop offset="1" stop-color="#D8B46F"/>
     </linearGradient>
     <linearGradient id="line" x1="85" y1="70" x2="800" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00E5C4"/>
-      <stop offset="0.5" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#22D3EE"/>
+      <stop stop-color="#3D7C73"/>
+      <stop offset="0.5" stop-color="#B98735"/>
+      <stop offset="1" stop-color="#6C8B78"/>
     </linearGradient>
     <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(708 166) rotate(90) scale(59)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7C3AED"/>
-      <stop offset="0.68" stop-color="#4C1D95"/>
-      <stop offset="1" stop-color="#251346"/>
+      <stop stop-color="#C89A4A"/>
+      <stop offset="0.68" stop-color="#9B6A2F"/>
+      <stop offset="1" stop-color="#5A3E25"/>
     </radialGradient>
     <filter id="blur24" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="24"/>
@@ -26,7 +26,7 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#94A3B8" stroke-opacity="0.065"/>
+      <path d="M32 0H0V32" stroke="#0D2B45" stroke-opacity="0.07"/>
     </pattern>
     <clipPath id="round"><rect width="900" height="330" rx="22"/></clipPath>
   </defs>
@@ -59,66 +59,66 @@
   <g clip-path="url(#round)">
     <rect width="900" height="330" fill="url(#bg)"/>
     <rect width="900" height="330" fill="url(#grid)"/>
-    <circle cx="127" cy="60" r="100" fill="#00E5C4" fill-opacity=".07" filter="url(#blur24)"/>
-    <circle cx="746" cy="218" r="140" fill="#7C3AED" fill-opacity=".13" filter="url(#blur24)"/>
+    <circle cx="127" cy="60" r="100" fill="#3D7C73" fill-opacity=".11" filter="url(#blur24)"/>
+    <circle cx="746" cy="218" r="140" fill="#B98735" fill-opacity=".15" filter="url(#blur24)"/>
     <path d="M-40 286C170 225 322 362 534 276C689 213 780 226 950 120" stroke="url(#line)" stroke-opacity=".12" stroke-width="38" filter="url(#blur24)"/>
 
     <g class="intro">
-      <text x="84" y="82" class="eyebrow" fill="#00E5C4">PRODUCT × AI × EXECUTION</text>
-      <text x="82" y="137" class="name" fill="#F8FAFC">SAJJAD DEHGHAN</text>
-      <text x="84" y="174" class="role" fill="#CBD5E1">Product Specialist · AI-assisted Product Builder</text>
-      <text x="84" y="202" class="role" fill="#94A3B8">Turning ambiguity into measurable product momentum.</text>
+      <text x="84" y="82" class="eyebrow" fill="#3D7C73">PRODUCT × AI × EXECUTION</text>
+      <text x="82" y="137" class="name" fill="#0D2B45">SAJJAD DEHGHAN</text>
+      <text x="84" y="174" class="role" fill="#173F5F">Product Specialist · AI-assisted Product Builder</text>
+      <text x="84" y="202" class="role" fill="#4C6B74">Turning ambiguity into measurable product momentum.</text>
       <path class="rule" d="M84 229H430" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
       <g transform="translate(84 251)">
-        <rect width="94" height="26" rx="13" fill="#00E5C4" fill-opacity=".1" stroke="#00E5C4" stroke-opacity=".35"/>
-        <circle cx="15" cy="13" r="3" fill="#00E5C4" class="spark"/>
-        <text x="26" y="17" class="small" fill="#A7F3D0">DISCOVER</text>
+        <rect width="94" height="26" rx="13" fill="#3D7C73" fill-opacity=".14" stroke="#3D7C73" stroke-opacity=".55"/>
+        <circle cx="15" cy="13" r="3" fill="#3D7C73" class="spark"/>
+        <text x="26" y="17" class="small" fill="#174C49">DISCOVER</text>
       </g>
       <g transform="translate(188 251)">
-        <rect width="70" height="26" rx="13" fill="#7C3AED" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".35"/>
-        <text x="14" y="17" class="small" fill="#DDD6FE">DESIGN</text>
+        <rect width="70" height="26" rx="13" fill="#B98735" fill-opacity=".14" stroke="#9B6A2F" stroke-opacity=".5"/>
+        <text x="14" y="17" class="small" fill="#704716">DESIGN</text>
       </g>
       <g transform="translate(268 251)">
-        <rect width="62" height="26" rx="13" fill="#22D3EE" fill-opacity=".1" stroke="#22D3EE" stroke-opacity=".35"/>
-        <text x="15" y="17" class="small" fill="#A5F3FC">SHIP</text>
+        <rect width="62" height="26" rx="13" fill="#6C8B78" fill-opacity=".15" stroke="#567562" stroke-opacity=".5"/>
+        <text x="15" y="17" class="small" fill="#355A49">SHIP</text>
       </g>
       <g transform="translate(340 251)">
-        <rect width="90" height="26" rx="13" fill="#F59E0B" fill-opacity=".1" stroke="#F59E0B" stroke-opacity=".35"/>
-        <text x="14" y="17" class="small" fill="#FDE68A">MEASURE</text>
+        <rect width="90" height="26" rx="13" fill="#C89A4A" fill-opacity=".15" stroke="#9B6A2F" stroke-opacity=".5"/>
+        <text x="14" y="17" class="small" fill="#704716">MEASURE</text>
       </g>
     </g>
 
     <g>
-      <circle cx="708" cy="166" r="116" stroke="#64748B" stroke-opacity=".18" stroke-dasharray="4 8"/>
+      <circle cx="708" cy="166" r="116" stroke="#0D2B45" stroke-opacity=".18" stroke-dasharray="4 8"/>
       <circle cx="708" cy="166" r="87" stroke="url(#line)" stroke-opacity=".36"/>
-      <circle class="pulse" cx="708" cy="166" r="62" fill="#7C3AED" fill-opacity=".18" filter="url(#blur24)"/>
-      <circle cx="708" cy="166" r="48" fill="url(#core)" stroke="#A78BFA" stroke-opacity=".55"/>
-      <circle cx="708" cy="166" r="36" stroke="#C4B5FD" stroke-opacity=".22" stroke-dasharray="2 5"/>
-      <text x="708" y="162" text-anchor="middle" class="micro" fill="#DDD6FE">MAKE IT</text>
-      <text x="708" y="179" text-anchor="middle" class="small" fill="#FFFFFF">REAL</text>
+      <circle class="pulse" cx="708" cy="166" r="62" fill="#B98735" fill-opacity=".2" filter="url(#blur24)"/>
+      <circle cx="708" cy="166" r="48" fill="url(#core)" stroke="#E6C77F" stroke-opacity=".7"/>
+      <circle cx="708" cy="166" r="36" stroke="#FFF0C7" stroke-opacity=".26" stroke-dasharray="2 5"/>
+      <text x="708" y="162" text-anchor="middle" class="micro" fill="#FFF0C7">MAKE IT</text>
+      <text x="708" y="179" text-anchor="middle" class="small" fill="#FFF7E1">REAL</text>
 
       <g class="orbit">
         <g transform="translate(708 50)"><g class="counter">
-          <circle r="12" fill="#0F172A" stroke="#00E5C4"/><circle r="3" fill="#00E5C4" filter="url(#glow)"/>
+          <circle r="12" fill="#0D2B45" stroke="#6C8B78"/><circle r="3" fill="#7FA08A" filter="url(#glow)"/>
         </g></g>
         <g transform="translate(824 166)"><g class="counter">
-          <circle r="12" fill="#0F172A" stroke="#22D3EE"/><path d="M-4 0h8M0-4v8" stroke="#22D3EE" stroke-linecap="round"/>
+          <circle r="12" fill="#0D2B45" stroke="#E6C77F"/><path d="M-4 0h8M0-4v8" stroke="#E6C77F" stroke-linecap="round"/>
         </g></g>
         <g transform="translate(708 282)"><g class="counter">
-          <circle r="12" fill="#0F172A" stroke="#F59E0B"/><path d="M-4 2l3-3 3 2 4-5" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle r="12" fill="#0D2B45" stroke="#C89A4A"/><path d="M-4 2l3-3 3 2 4-5" stroke="#E6C77F" stroke-linecap="round" stroke-linejoin="round"/>
         </g></g>
         <g transform="translate(592 166)"><g class="counter">
-          <circle r="12" fill="#0F172A" stroke="#A78BFA"/><path d="M-4-3h8v6h-8z" stroke="#A78BFA"/>
+          <circle r="12" fill="#0D2B45" stroke="#3D7C73"/><path d="M-4-3h8v6h-8z" stroke="#7FA08A"/>
         </g></g>
       </g>
 
-      <path class="scan" d="M615 111V221" stroke="#22D3EE" stroke-opacity=".45"/>
-      <circle cx="836" cy="80" r="2" fill="#22D3EE" class="spark"/>
-      <circle cx="574" cy="90" r="2.5" fill="#A78BFA" class="spark two"/>
-      <circle cx="854" cy="258" r="2" fill="#00E5C4" class="spark three"/>
+      <path class="scan" d="M615 111V221" stroke="#3D7C73" stroke-opacity=".5"/>
+      <circle cx="836" cy="80" r="2" fill="#3D7C73" class="spark"/>
+      <circle cx="574" cy="90" r="2.5" fill="#B98735" class="spark two"/>
+      <circle cx="854" cy="258" r="2" fill="#6C8B78" class="spark three"/>
     </g>
 
-    <text x="868" y="306" text-anchor="end" class="micro" fill="#64748B">TEHRAN · BUILDING FOR THE WORLD</text>
+    <text x="868" y="306" text-anchor="end" class="micro" fill="#4C6B74">TEHRAN · BUILDING FOR THE WORLD</text>
   </g>
   <rect x=".5" y=".5" width="899" height="329" rx="21.5" stroke="url(#line)" stroke-opacity=".22"/>
 </svg>

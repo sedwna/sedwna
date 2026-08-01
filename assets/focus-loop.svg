@@ -1,0 +1,93 @@
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sajjad Dehghan's product focus loop</title>
+  <desc id="desc">A four-stage visual loop connecting product strategy, user experience, AI-assisted building, and growth loops through continuous evidence and learning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="20" y1="0" x2="880" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E1BE7E"/><stop offset=".52" stop-color="#F2DDAE"/><stop offset="1" stop-color="#D8B46F"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="80" y1="0" x2="820" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D7C73"/><stop offset=".38" stop-color="#B98735"/><stop offset=".7" stop-color="#6C8B78"/><stop offset="1" stop-color="#9B6A2F"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#0D2B45" stroke-opacity=".055"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#3D7C73"/>
+    </marker>
+  </defs>
+  <style>
+    .eyebrow { font: 650 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; }
+    .step { font: 650 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1px; }
+    .name { font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sub { font: 500 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .loop { font: 650 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.1px; }
+    .card { transition: opacity .2s ease; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect x=".5" y=".5" width="899" height="239" rx="20" fill="url(#bg)" stroke="#B58B4A"/>
+  <rect x="1" y="1" width="898" height="238" rx="19" fill="url(#grid)"/>
+  <text x="44" y="34" class="eyebrow" fill="#3D7C73">MY PRODUCT FOCUS SYSTEM</text>
+  <text x="856" y="34" text-anchor="end" class="eyebrow" fill="#4C6B74">FROM SIGNAL TO IMPACT</text>
+
+  <path d="M128 118H742" stroke="url(#flow)" stroke-width="2" stroke-opacity=".34"/>
+  <circle r="4" fill="#FFF0C7" filter="url(#glow)">
+    <animateMotion path="M128 118H742" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <g class="card">
+    <rect x="44" y="57" width="168" height="112" rx="15" fill="#F5E5C0" stroke="#3D7C73" stroke-opacity=".62"/>
+    <path d="M59 58H197" stroke="#3D7C73" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="76" cy="92" r="17" fill="#3D7C73" fill-opacity=".13" stroke="#3D7C73" stroke-opacity=".58"/>
+    <circle cx="76" cy="92" r="7" stroke="#3D7C73"/><circle cx="76" cy="92" r="2.5" fill="#3D7C73"/>
+    <path d="M76 79V84M76 100V105M63 92H68M84 92H89" stroke="#3D7C73" stroke-linecap="round"/>
+    <text x="103" y="87" class="step" fill="#3D7C73">01 · FRAME</text>
+    <text x="60" y="129" class="name" fill="#0D2B45">Product Strategy</text>
+    <text x="60" y="148" class="sub" fill="#4C6B74">Choose the right bet.</text>
+  </g>
+
+  <g class="card">
+    <rect x="258" y="57" width="168" height="112" rx="15" fill="#EED6A4" stroke="#B98735" stroke-opacity=".62"/>
+    <path d="M273 58H411" stroke="#B98735" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="290" cy="92" r="17" fill="#B98735" fill-opacity=".14" stroke="#9B6A2F" stroke-opacity=".58"/>
+    <path d="M280 97C283 84 290 84 293 91C296 98 301 97 302 86" stroke="#9B6A2F" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="280" cy="97" r="2" fill="#9B6A2F"/><circle cx="302" cy="86" r="2" fill="#9B6A2F"/>
+    <text x="317" y="87" class="step" fill="#9B6A2F">02 · SHAPE</text>
+    <text x="274" y="129" class="name" fill="#0D2B45">User Experience</text>
+    <text x="274" y="148" class="sub" fill="#4C6B74">Make value feel clear.</text>
+  </g>
+
+  <g class="card">
+    <rect x="472" y="57" width="168" height="112" rx="15" fill="#E4D2A5" stroke="#6C8B78" stroke-opacity=".62"/>
+    <path d="M487 58H625" stroke="#6C8B78" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="504" cy="92" r="17" fill="#6C8B78" fill-opacity=".14" stroke="#567562" stroke-opacity=".58"/>
+    <path d="M504 79L507 88L516 92L507 96L504 105L501 96L492 92L501 88L504 79Z" fill="#3D7C73" class="pulse"/>
+    <text x="531" y="87" class="step" fill="#3D7C73">03 · BUILD</text>
+    <text x="488" y="129" class="name" fill="#0D2B45">AI-assisted Build</text>
+    <text x="488" y="148" class="sub" fill="#4C6B74">Ship the learning faster.</text>
+  </g>
+
+  <g class="card">
+    <rect x="686" y="57" width="168" height="112" rx="15" fill="#E7C789" stroke="#9B6A2F" stroke-opacity=".62"/>
+    <path d="M701 58H839" stroke="#9B6A2F" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="718" cy="92" r="17" fill="#B98735" fill-opacity=".14" stroke="#9B6A2F" stroke-opacity=".58"/>
+    <path d="M708 99L714 93L719 96L728 84M723 84H728V89" stroke="#704716" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="745" y="87" class="step" fill="#704716">04 · GROW</text>
+    <text x="702" y="129" class="name" fill="#0D2B45">Growth Loops</text>
+    <text x="702" y="148" class="sub" fill="#4C6B74">Turn signals into impact.</text>
+  </g>
+
+  <path d="M770 170V204H128V170" stroke="url(#flow)" stroke-width="2" stroke-opacity=".6" marker-end="url(#arrow)"/>
+  <circle r="3.5" fill="#3D7C73" filter="url(#glow)">
+    <animateMotion path="M770 170V204H128V170" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="330" y="188" width="240" height="31" rx="15.5" fill="#E7C789" stroke="#9B6A2F" stroke-opacity=".62"/>
+  <circle cx="350" cy="203.5" r="3" fill="#3D7C73" class="pulse"/>
+  <text x="450" y="207" text-anchor="middle" class="loop" fill="#0D2B45">EVIDENCE &amp; LEARNING</text>
+</svg>
