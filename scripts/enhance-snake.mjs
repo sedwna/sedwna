@@ -145,8 +145,15 @@ function enhance(svg, theme, contributionTotal) {
     <clipPath id="progressClip">
       <rect x="2" y="152" width="844.6" height="16" rx="8"/>
     </clipPath>
+    <clipPath id="snakeGridClip" clipPathUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="848" height="112"/>
+    </clipPath>
   </defs>`;
   svg = svg.replace(/(<desc>[\s\S]*?<\/desc>)/, `$1${defs}`);
+  svg = svg.replace(
+    /((?:<rect class="s s\d+"[^>]*\/>\s*)+)/,
+    '<g clip-path="url(#snakeGridClip)">$1</g>',
+  );
 
   const extraCss = `
     .frame-text{font:650 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:${theme.text}}
